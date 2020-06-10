@@ -31,3 +31,10 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Ghjgjg(models.Model):
+    "Generated Model"
+    hgkjg = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="ghjgjg_hgkjg",
+    )
