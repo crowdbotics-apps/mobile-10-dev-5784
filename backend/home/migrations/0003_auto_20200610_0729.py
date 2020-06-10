@@ -9,43 +9,73 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('home', '0002_load_initial_data'),
+        ("home", "0002_load_initial_data"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='customtext',
-            name='edfqwef',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_edfqwef', to='home.HomePage'),
+            model_name="customtext",
+            name="edfqwef",
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_edfqwef",
+                to="home.HomePage",
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='edwqdwed',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_edwqdwed', to='home.HomePage'),
+            model_name="customtext",
+            name="edwqdwed",
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_edwqdwed",
+                to="home.HomePage",
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='eed',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_eed', to=settings.AUTH_USER_MODEL),
+            model_name="customtext",
+            name="eed",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_eed",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='ewdwqe',
-            field=models.ManyToManyField(blank=True, related_name='customtext_ewdwqe', to='home.HomePage'),
+            model_name="customtext",
+            name="ewdwqe",
+            field=models.ManyToManyField(
+                blank=True, related_name="customtext_ewdwqe", to="home.HomePage"
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='eweew',
+            model_name="customtext",
+            name="eweew",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='fdcwefq',
-            field=models.ManyToManyField(blank=True, related_name='customtext_fdcwefq', to=settings.AUTH_USER_MODEL),
+            model_name="customtext",
+            name="fdcwefq",
+            field=models.ManyToManyField(
+                blank=True,
+                related_name="customtext_fdcwefq",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='sads',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_sads', to=settings.AUTH_USER_MODEL),
+            model_name="customtext",
+            name="sads",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_sads",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
     ]
